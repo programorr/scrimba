@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    background: black;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 575px;
+    height: 385px;
+    background: #1B244A;
+    border-radius: 10px;
+    margin-top: 50px;
+    border: 5px solid #9AABD8;
+}
+
+.score-box {
+    background: black;
+    width: 155px;
+    height: 120px;
+    border: 5px solid black;
+    border-radius: 5px;
+    color: #F94F6D;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    font-size: 90px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 127px; 
+}
+
+#guest-buttons, #home-buttons {
+    text-align: center;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-button {
+    width: 45px;
+    height: 45px;
+    background: #1B244A;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+/* or 155% */
+    text-align: center;
+    color: #9AABD8;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    position: middle;
+}
+
+.add-button:hover {
+    color: #F94F6D;
+    border: 2px solid #F94F6D;
+    background: #000000;
+    cursor: pointer;
+}
+.game-button {
+  font-family: 'Verdana', sans-serif;
+  background: #1B244A;
+  color: #9AABD8;
+  font-size: 24px;
+  border: 2px solid #9AABD8;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  height: 50px;
+  width: 200px;
+  margin: auto;
+}
+
+.game-button:hover {
+    color: #F94F6D;
+    border: 2px solid #F94F6D;
+    background: #000000;    
+    cursor: pointer;
+}
+
+#game-buttons {
+  display: flex;
+  padding-top: 15px;
+  margin: auto;
+}
+
+#board-title-home {
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 36px;
+/* identical to box height, or 90% */
+text-align: center;
+color: #EEEEEE;
+margin-bottom: 25px;
+}
+
+#board-title-guest {
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 36px;
+/* identical to box height, or 90% */
+text-align: center;
+color: #EEEEEE;
+margin-bottom: 25px;
+}
