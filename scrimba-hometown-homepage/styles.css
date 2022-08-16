@@ -1,0 +1,149 @@
+html {
+    margin: 0px;
+}
+body {
+    margin: 0px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+div {
+    margin: 0px;
+}
+
+.activity-heading {
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.activities-flex img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #A2C5EB;
+    transition: transform .1s ease-in-out;
+}
+
+.activities-flex img:hover {
+    border: 5px solid #A2C5EB;
+    transform: rotate(-10deg)
+    
+}
+
+.hero-section-div {
+    background-image: url("images/UNC-Cover.jpeg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-shadow: 0px 0px 2px #000000;
+    text-align: center;
+    margin: 0px;
+    min-height: 500px;
+}
+
+.hero-section-div h1 {
+    margin: 0px;
+    font-family: 'Merriweather', serif;
+    text-shadow: 2px 2px 0px black;
+}
+
+.hero-section-div h2 {
+    margin: 5px;
+    /* text-transform: uppercase; */
+    font-family: 'Merriweather', serif;
+    /*border: 1px solid red;*/
+    text-shadow: 2px 2px 0px black;
+}
+
+.italic-style {
+    font-style: italic;
+    color: #F4E8DD;
+    text-shadow: 2px 2px 0px black;
+}
+
+.hero-section-div h3 {
+    margin: 0px auto;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    background:rgba(255,255,255,0.85);
+    color: black;
+    text-shadow: none;
+    font-family: 'Merriweather', serif;
+    
+}
+
+.hero-section-title {
+    background-color: rgba(153,186,221, 0.85);
+    max-width: 500px;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.activities-section-div {
+    background: rgb(201,227,255);
+    background: linear-gradient(180deg, rgba(201,227,255,1) 50%, rgba(255,255,255,1) 100%);
+    margin: auto;
+    padding: 30px 0px 50px 0px;
+}
+
+.activities-flex {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.activity {
+    background: white;
+    border-radius: 15px;
+    border: 5px solid #A2C5EB;
+    width: 200px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #414F5E;
+}
+
+.activity-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.activity-description {
+    font-size: 14px;
+}
+
+.guide-section-div {
+    max-width: 400px;
+    background: #6D859E;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    border-bottom: 10px solid #414F5E; 
+}
+
+.guide-text {
+    padding: 10px;
+}
+
+.profile-pic {
+    padding: 5px;
+    width: 25%;
+    height: 25%;
+}
+
+.activities-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+}
