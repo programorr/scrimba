@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Steven's Random Password Generator</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="main-box">
+            <h1><span class="white">Generate a</span><br>
+            <span class="green">random password</span></h1>
+            <h2>Never use an insecure password again.</h2>
+            <div class="password-generate">
+                <button id="generate-btn" class="green-btn" onclick="generatePassword()">Generate Passwords</button>
+                <input id="field-length" class="box-length" placeholder="15">
+                <button id="set-length" class="green-btn btn-set" onclick="setPasswordLength()">Set Length</button>
+                <button id="reset-button" class="white-btn btn-reset" onclick="resetButton()">Reset</button>
+            </div>
+                <div id="error-message" class="error-message"></div>
+                <hr>
+            <div class="password-boxes">
+                <input id="left-password" class="password-box" placeholder="left placeholder">
+                <input id="right-password" class="password-box" placeholder="right placeholder">
+            </div>
+                <hr>
+            <!-- Lowercase Alphabet Toggle -->
+            <div id="switch-toggle-alphabet">
+                <label class="switch">
+                    <input type="checkbox" id="lowercaseAlphabetCheckbox" onclick="toggleLowercaseAlphabet()">
+                    <span class="slider round"></span>
+                </label>
+                <span id="includeLowercaseAlphabetSpan" class="remove-toggle-text">Include <b>Lowercase</b> Alphabet Characters</span>
+            </div>
+            <!-- Uppercase Alphabet Toggle -->
+            <div id="switch-toggle-alphabet">
+                <label class="switch">
+                    <input type="checkbox" id="uppercaseAlphabetCheckbox" onclick="toggleUppercaseAlphabet()">
+                    <span class="slider round"></span>
+                </label>
+                <span id="includeUppercaseAlphabetSpan" class="remove-toggle-text">Include <b>Uppercase</b> Alphabet Characters</span>
+            </div>
+            <!-- Special Characters Toggle -->
+            <div id="switch-toggle-specialCharacters">
+                <label class="switch">
+                    <input type="checkbox" id="specialCharactersCheckbox" onclick="toggleSpecialCharacters()">
+                    <span class="slider round"></span>
+                </label>
+                <span id="includeSpecialCharactersSpan" class="remove-toggle-text">Include <b>Special Characters</b></span>
+            </div>
+            <!-- Numbers Toggle-->
+            <div id="switch-toggle-numbers">
+                <label class="switch">
+                    <input type="checkbox" id="numbersCheckbox" onclick="toggleNumbers()">
+                    <span class="slider round"></span>
+                </label>
+                <span id="includeNumbersSpan" class="remove-toggle-text">Include <b>Numbers</b></span>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

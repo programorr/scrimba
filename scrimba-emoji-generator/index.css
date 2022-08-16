@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Gugi', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.flex-body {
+    padding: 10px;
+    background: hsla(0, 0%, 95%, 1);
+    background: radial-gradient(circle, hsla(0, 0%, 95%, 1) 0%, hsla(0, 0%, 83%, 1) 88%);
+    background: -moz-radial-gradient(circle, hsla(0, 0%, 95%, 1) 0%, hsla(0, 0%, 83%, 1) 88%);
+    background: -webkit-radial-gradient(circle, hsla(0, 0%, 95%, 1) 0%, hsla(0, 0%, 83%, 1) 88%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /*align-items: center;*/
+    align-content: center;
+    height: 100vh;
+    /*border: 2px dashed red;*/
+}
+
+.flex-items {
+    width: 550px;
+    margin: auto;
+    padding: 25px 40px;
+    border-radius: 10px;
+    background: #dedede;
+    border: 3px solid rgba(0,0,0,10%);
+    box-shadow: 10px 10px 0 10px rgba(0,0,0,10%);
+    /*border: 2px dashed red;*/
+}
+
+.flex-name {
+    letter-spacing: 2px;
+    font-size: 50px;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    /*background-color: #474747;*/
+    background-color: #d3d3d3;
+    box-shadow: 4px 3px 0 0px rgba(0,0,0,10%);
+    /*border: 1px solid #888;*/
+}
+
+.emoji-text {
+    color: #ffffff;
+    text-shadow: 3px 3px rgba(0,0,0,10%);
+    text-outline: 3px mediumseagreen;
+}
+
+.machine-text {
+    color: #efefef;
+    text-shadow: 3px 3px rgba(0,0,0,10%);
+}
+
+.emoji-hidden {
+    min-height: 200px;
+    background: #ffffff;
+    margin: 40px 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 3px 3px 0 2px rgba(0,0,0,20%);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#emoji-container {
+    max-height: 150px;
+    text-align: center;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#emoji-container span {
+    margin: 10px;
+    font-size: 60px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /*border: 2px dashed red;*/
+    border-radius: 15px;
+    background-color: #d3d3d3;
+    box-shadow: 4px 3px 0 0 rgba(0,0,0,10%);
+    /*box-shadow: 2px 3px 0 0 #474747;*/
+    border: 2px solid #e0e0e0;
+    /*max-width: 550px;*/
+    padding: 5px;
+    margin: auto;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    padding: 5px;
+    margin: 15px;
+    border-radius: 100px;
+    box-shadow: 2px 2px 0 2px rgba(0,0,0,10%);
+    /*box-shadow: 2px 4px 0 0 #474747;*/
+    border: 2px solid #e0e0e0;
+}
+
+svg {
+    border-radius: 50%;
+}
+
+.emoji-input-field {
+    /*border: 3px solid #474747;*/
+    box-shadow: inset 3px 3px 0 2px rgba(0,0,0,25%);
+}
+
+.reset-button {
+    font-family: 'Gugi', sans-serif;
+    color: rgba(0,0,0,30%);
+    margin: 10px;
+    align-items: center;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 3px;
+    box-shadow: 1px 3px rgba(0,0,0,25%);
+}
+
+.reset-button:active {
+    transform: translate(1px, 2px);
+    box-shadow: none;
+}
+
+.btn {
+    /*font-size: 36px;*/
+    margin: 5px;
+    padding: 10px;
+    /*border: none;*/
+    /*border: 2px solid black;*/
+    border-radius: 50%;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+
+    /*border: 2px dashed blue;*/
+    /*background-color: red;*/
+
+}
+
+.fa-icon {
+    border: 2px dashed blue;
+    height: 50px;
+    width: 50px;
+}
+
+.plus {
+    background-color: seagreen;
+}
+
+.btn {
+    /*background-color: #ffffff;*/
+    box-shadow: 1px 3px #474747;
+}
+
+.btn:active{
+    transform: translate(1px, 2px);
+    box-shadow: none;
+}
+
+.add {
+    background-color: mediumseagreen;
+    border: 2px solid rgba(0, 0, 0, .25);
+    /*border: 2px dashed green;*/
+}
+
+.plus .fa-primary {
+    fill: white;
+    opacity: 0.7;
+}
+
+.plus .fa-secondary {
+    fill: mediumseagreen;
+    opacity: 0.6;
+}
+
+.remove {
+    background-color: indianred;
+    border: 2px solid rgba(0, 0, 0, .25);
+    /*border: 2px dashed white;*/
+}
+
+.minus .fa-primary {
+    fill: white;
+    opacity: 0.7;
+}
+
+.minus .fa-secondary {
+    fill: crimson;
+    opacity: 0.6;
+}
+
+/* */
+
+input {
+    margin: 0 auto;
+    font-size: 50px;
+    width: 200px;
+    display: block;
+    border: none;
+    height: 130px;
+    background: white;
+    border-radius: 6px;
+    text-align: center;
+}

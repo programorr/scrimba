@@ -1,0 +1,250 @@
+:root {
+    --night-background: #1C1C1C;
+    --night-blue: #1F2937;
+    --night-light-blue: #273549;
+    --white: #ffffff;
+    --green: #4ADF86;
+    --darker-green: #3cb574;
+    --grey: #8e99a3;
+}
+
+body {
+    margin: 0;
+    background: var(--night-background);
+    font-family: 'Karla', sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--grey);
+}
+
+hr {
+    border: 1px solid var(--night-light-blue);
+    margin-top: 35px;
+    margin-bottom: 35px;
+    width: 100%;
+}
+
+.green {
+    color: var(--green);
+}
+.white {
+    color: var(--white);
+}
+
+.password-generate {
+    text-align: center;
+}
+
+.length-box {
+    background: var(--night-light-blue);
+    border: 2px solid var(--night-blue);
+    color: var(--green);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 6px;
+    height: 40px;
+    width: 50px;
+    margin-left: 12px;
+    margin-right: 12px;
+    cursor: grab;
+}
+
+.length-box:hover {
+    border: 2px dashed var(--darker-green);
+}
+
+.password-boxes {
+    text-align: center;
+}
+
+.password-box {
+    background: var(--night-light-blue);
+    border: 2px solid var(--night-blue);
+    color: var(--green);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 6px;
+    height: 40px;
+    width: 210px;
+    margin-right: 12px;
+    margin-left: 12px;
+    cursor: grab;
+}
+
+.password-box:hover {
+    border: 2px dashed var(--darker-green);
+}
+
+.password-box:active {
+    border: 2px dotted var(--white);
+}
+
+input:active {
+    border: 2px dotted var(--darker-green);
+}
+
+.green-btn {
+    background: var(--green);
+    text-shadow: 0 0 2px var(--night-blue);
+    color: var(--white);
+    border: 2px solid var(--green);
+    border-radius: 6px;
+    height: 40px;
+    width: 200px;
+    margin: 0;
+    font-weight: normal;
+}
+
+
+.white-btn {
+    background: var(--white);
+    /*text-shadow: 0 0 2px var(--night-blue);*/
+    color: var(--night-background);
+    border: 2px solid red;
+    border-radius: 6px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+.btn-set {
+    width: 100px;
+}
+
+.btn-reset {
+    background: var(--night-light-blue);
+    border: 2px solid var(--night-light-blue);
+    width: 65px;
+    /*font-size: 45px;*/
+    color: var(--grey);
+    margin-left: 12px;
+    margin-right: 12px;
+    padding: 0;
+}
+
+.green-btn:hover{
+    background: var(--darker-green);
+    font-weight: bold;
+    border: 2px solid var(--green);
+}
+
+.green-btn:active {
+    background: var(--darker-green);
+    transform: translateY(4px);
+}
+
+
+.white-btn:hover{
+    background: var(--white);
+    font-weight: bold;
+    border: 2px solid var(--white);
+    color: var(--night-background);
+}
+
+.white-btn:active {
+    background: var(--white);
+    transform: translateY(4px);
+}
+
+#main-box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background: var(--night-blue);
+    width: 550px;
+    height: 550px;
+    margin: 50px auto 50px auto;
+    padding: 50px 50px;
+}
+
+/* slide css */
+
+
+
+#switch-toggle-num, #switch-toggle-spec {
+    margin: auto;
+    width: 100%;
+    /*border: 1px solid red;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.remove-toggle-text {
+    margin: 15px;
+    color: var(--grey);
+}
+
+.switch {
+       position: relative;
+       display: inline-block;
+       width: 60px;
+       height: 34px;
+   }
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #4ADF86;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #3cb574;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
